@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> ShEx Schema IDE </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="common.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="splash.css" media="screen" />
+</head>
+
+<body>
+
+<h1> ShEx Schema IDE </h1>
+
+<form id="init-form" class="form-horizontal center" role="form">
+
+  <div class="row">
+    <div class="col-2">
+      <div class="form-group init-first-column">
+
+        <label class="init-label full-width" for="sourceSchemaFile"> Source Schema* </label>
+        <div class="col-sm-7">
+          <input id="sourceSchemaFile" class="file-input-text form-control" tabindex="1" type="text"
+                 placeholder="source schema (required)" />
+        </div>
+        <div class="init-input-buttons btn-group btn-group-sm col-sm-4 pull-right">
+            <button id="browseSourceSchemaFiles" type="button" class="init-input-button btn btn-primary">File</button>
+            <button id="querySourceSchema" type="button" class="init-input-button btn btn-primary">Query</button>
+            <button "browseSourceSchemaUrls" "type="button" class="init-input-button btn btn-primary">URL</button>
+        </div>
+
+     </div> <!-- form-group -->
+    </div> <!-- end col-2 -->
+  </div> <!-- end row -->
+
+  <div class="row">
+    <div class="col-2">
+      <div class="form-group init-first-column">
+
+        <label class="init-label full-width" for="sourceSampleFile"> Source Sample Data* </label>
+        <div class="col-sm-7">
+          <input id="sourceSampleFile" class="file-input-text form-control" tabindex="2" type="text"
+                 placeholder="sample data for source schema (required)" />
+        </div>
+        <div class="init-input-buttons btn-group btn-group-sm col-sm-4 pull-right">
+            <button id="browseSampleDataFiles" type="button" class="init-input-button btn btn-primary">File</button>
+            <button id="querySampleData" type="button" class="init-input-button btn btn-primary">Query</button>
+            <button "browseSampleDataUrls" "type="button" class="init-input-button btn btn-primary">URL</button>
+        </div>
+
+     </div> <!-- form-group -->
+    </div> <!-- end col-2 -->
+  </div> <!-- end row -->
+
+  <div class="row">
+    <div class="col-2">
+      <div class="form-group init-first-column">
+
+        <label class="init-label full-width" for="shexSchemaFile"> ShEx Schema Map File </label>
+        <div class="col-sm-7">
+          <input id="shexSchemaFile" class="file-input-text form-control" tabindex="3" type="text"
+                 placeholder="ShEx schema map file path or URL (optional)" />
+        </div>
+        <div class="init-input-buttons btn-group btn-group-sm col-sm-4 pull-right">
+            <button id="browseShexSchemaFiles" type="button" class="init-input-button btn btn-primary">File</button>
+            <button "browseShexSchemaUrls" "type="button" class="init-input-button btn btn-primary">URL</button>
+        </div>
+
+     </div> <!-- form-group -->
+    </div> <!-- end col-2 -->
+  </div> <!-- end row -->
+
+  <div class="row">
+    <div">
+      <button class="pull-right" id="init-go-button" type="submit">go</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

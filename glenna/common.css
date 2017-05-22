@@ -1,0 +1,79 @@
+html, body {
+   background: WhiteSmoke,
+   height: 100%;
+   width: 100%;
+}
+
+h1 {
+  color: SlateGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto !important;
+}
+
+form {
+  display: block;
+  margin: 5px 30px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.full-width {
+    display:block;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 2px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 2px;
+  opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 2px;
+  opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 2px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 2px;
+}

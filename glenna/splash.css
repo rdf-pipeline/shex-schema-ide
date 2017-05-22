@@ -1,0 +1,120 @@
+#init-form {
+  border: 2px groove #F8F8F8;
+  border-radius: 5px;
+  background: transparent;
+  margin: 15px;
+  padding: 15px;
+  width: 650px;
+}
+
+.init-first-column {
+   margin-bottom: 20px;
+   margin-right: 40px;
+}
+
+.init-second-column {
+   margin-bottom: 20px;
+}
+
+.init-label {
+  background: transparent;
+  color: slategray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 5px 0 25px;
+  text-transform: uppercase;
+}
+
+.init-input-buttons {
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+
+.init-input-button { 
+  border: 1px solid #E4E4E4;
+  background: DarkGray;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#init-go-button {
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+  background: DarkGreen;
+  font-size: 12px;
+  color: white;
+  margin-right: 15px;
+  padding: 0.5em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif; 
+  font-size: 12px; 
+  font-style: italic;
+  font-weight: 100; 
+  padding: 2px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif; 
+  font-size: 12px; 
+  font-style: italic;
+  font-weight: 100; 
+  padding: 2px;
+  opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif; 
+  font-size: 12px; 
+  font-style: italic;
+  font-weight: 100; 
+  padding: 2px;
+  opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif; 
+  font-size: 12px; 
+  font-style: italic;
+  font-weight: 100; 
+  padding: 2px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: DarkGray;
+  font-family: Source Sans Pro, Arial, sans-serif; 
+  font-size: 12px; 
+  font-style: italic;
+  font-weight: 100; 
+  padding: 2px;
+}
+
+.file-input-text {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  color: SlateGray;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 14px;
+  margin: 3px 30px;
+  outline: none;
+  opacity: 1;
+  padding: 1px;
+  position: relative;
+  transition: opacity .3s, box-shadow .3s;
+  width: 100%;
+}
