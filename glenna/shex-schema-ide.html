@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> ShEx Schema IDE </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/common.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/shex-schema-ide.css" media="screen" />
+</head>
+
+<body>
+
+  <div class="navigation-buttons btn-group btn-group-sm">
+     <button id="navBack" type="button" class="navigation-button btn btn-primary"> &lt; </button>
+     <button id="navForward" "type="button" class="navigation-button btn btn-primary"> &gt; </button>
+  </div>
+
+    <h1> ShEx Schema IDE </h1>
+
+  <div class="container">
+    <form id="main-ide-form" class="form-horizontal center" role="form">
+
+     <div class="row">
+
+        <div id="jsonld-frame-div" class="col-sm-12 text-left">
+           <label class="top-label text-right version"> JSON-LD Frame: </label>
+           <textarea id="jsonld-frame" tabindex="1">
+{
+  "@context": "https://raw.githubusercontent.com/rdf-pipeline/translators/master/data/fake_cmumps/patient-7/context.jsonld",
+  "@graph": [{"@type": "Patient-2"}]
+}
+           </textarea>
+        </div>
+
+
+     </div> <!-- row -->
+
+     <div class="row">
+
+        <!-- SAMPLE DATA -->
+        <div class="col-sm-3">
+           <label class="workbench-label text-left"> Sample Data </label>
+           <ul class="nav nav-tabs">
+              <li><a href="#">Raw</a></li>
+              <li class="active"><a href="#">JSON</a></li>
+              <li><a href="#">Context</a></li>
+           </ul>
+           <div id="sample-data" tabindex="2">
+             <div><a href="#" class="active-prop"> { </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "type": "cmumpss:Patient-2", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "_id": "2-000007", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "patient_ssn-2": "777777777", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "street_address-2": "100 MAIN ST", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "city-2": "ANYTOWN", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "zip_code-2": "60040", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "state-2": "NY/USA", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "label": "BUNNY,BUGS", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "registration_comment-2": "fake text", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "name-2": "BUNNY,BUGS DOC", </a></div>
+             <div class="indent-2"><a href="#" class="inactive-prop"> "phone-2" : "555 555 5555", </a></div>
+             <div class="indent-2"><a href="#" class="inactive-prop"> "office_phone-2" : "555 555 5556", </a></div>
+             <div class="indent-2"><a href="#" class="inactive-prop"> "temporary_phone-2" : "555 555 5555", </a></div>
+             <div class="indent-2"><a href="#" class="inactive-prop"> "fax_number-2" : "555 555 5556", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "email_address-2" : "bugs.bunny@looneytun.es", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "ssn-2": "777777777", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "dod_id_-2": "7777777770", </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> "sex-2": { </a></div>
+                <div class="indent-4"><a href="#" class="active-prop"> "id": "cmumpss:2__02_E-MALE", </a></div>
+                <div class="indent-4"><a href="#" class="active-prop"> "label": "MALE" </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> }, </a></div>
+             <div class="indent-2"><a href="#" class="inactive-prop"> "marital_status-2": { </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop"> "id": "11-2", </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop"> "label": "DIVORCED" </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> }, </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop">"emergency_contact-2" : "RUNNAH, ROAD", </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop">"ephone-2" : "555 555 5558", </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop">"erelationship-2" : { </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop"> "id" : "8140-20", </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop">"label" : "OTHER RELATIONSHIP" </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> }, </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop">"estreet_address-1" : "c/o Mel Blanc", </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop">"estreet_address-2" : "7000 InternalTest Boulevard", </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop">"ecity-2" : "ALBUQUERQUE", </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop">"estate-2" : { </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop"> "id" : "5-17", </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop">"label" : "NEW MEXICO" </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> }, </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> "ezip-2" : "55555", </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> "fmp-2": { </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop"> "id": "8110-20", </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop">> "label": "20" </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> } </a></div>
+            <div><a href="#" class="active-prop"> } </a> </div>
+           </div>
+        </div> <!-- SAMPLE-DATA -->
+
+
+        <!-- SHEX SCHEMA  -->
+        <div class="col-sm-6">
+           <label class="workbench-label text-center"> ShEx Schema Map </label>
+           <label class="top-label text-right version pull-right"> Version: 
+                <input placeholder="#.#.#" tabindex="2" />
+           </label>
+           <ul class="nav nav-tabs">
+              <li><a href="#">Prefixes</a></li>
+              <li class="active"><a href="#">Mappings</a></li>
+           </ul>
+           <textarea id="shex-schema" tabindex="3">
+<http://hokukahu.com/patient-1> {
+   cmumpss:identifier        xsd:string    %Map:{ dem:id %};
+   cmumpss:name-2            xsd:string    %Map:{
+     regex(/"(?<dem:family>[a-zA-Z'\\-]+), (?<dem:given>[a-zA-Z'\\-\\s]+)"/)
+   %};
+   rdfs:label                xsd:string    %Map:{ dem:patient_label %};
+   cmumpss:sex-2  {
+     rdfs:label              xsd:string?   %Map:{
+       hashmap( dem:sex_label, {"FEMALE": "Female", "MALE": "Male", "OTHER": "Other"})
+     %};
+   };
+   cmumpss:dob-2                           xsd:date      %Map:{ dem:dob %};
+   cmumpss:street_address-2  xsd:string?   %Map:{ dem:street_address %};
+   cmumpss:city-2            xsd:string?   %Map:{ dem:city %};
+   cmumpss:state-2           xsd:string?   %Map:{ dem:state %};
+   cmumpss:zip_code-2        xsd:string?   %Map:{ dem:zipcode %};
+   cmumpss:phone-2           xsd:string?   %Map:{ dem:phone %};
+   cmumpss:fmp-2  {
+     cmumpss:identifier      xsd:string    %Map:{ dem:fmp_id %};
+     rdfs:label              xsd:string    %Map:{ dem:fmp_label %};
+   };
+ }
+           </textarea>
+           <div id="shex-schema-root-div"> 
+             <label id="shex-root-label" class="info-label"> Start:  </label>
+             <input id="shex-schema-root" placeholder="Root URI for building ShEx mappings" tabindex="4" />
+           </div>
+        </div> <!-- SHEX SCHEMA -->
+
+        <!-- MAPPING HUB  -->
+        <div class="col-sm-3">
+           <label class="workbench-label text-left"> Mapping Hub </label>
+           <div class="search full-width" tabindex="5">
+             <button id="map-hub-search-btn" type="button" class="btn"> <img id="map-hub-search-img" src="images/search-icon.png" /></button>
+             <input id="map-hub-search-input" placeholder="search regular expression" tabindex="2" />
+           </div>
+           <div id="map-hub-results" tabindex="6">
+           </div>
+        </div> <!-- SOURCE SCHEMA -->
+
+     </div> <!-- row -->
+
+     <!-- Execution & Console --> 
+     <div class="row full-width">
+          <div class="command-box"> 
+             <div class="circle"> 
+                <button id="test-schema" type="button" class="arrow-right btn"> </button>
+             </div>
+          </div>
+          <div> 
+             <label id="execute-console-label" for="execute-console" class="text-left"> Test Console </label>
+             <div id="execute-console">  
+             </div>
+          </div>
+     </div> <!-- row -->
+
+   </form>
+</div> <!-- container -->
+
+</body>
+</html>

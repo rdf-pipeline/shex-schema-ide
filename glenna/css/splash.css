@@ -18,7 +18,7 @@
 
 .init-label {
   background: transparent;
-  color: slategray;
+  color: SlateGray;
   font-family: Source Sans Pro, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -40,16 +40,9 @@
   text-transform: uppercase;
 }
 
-#init-go-button {
-  border: 1px solid #E4E4E4;
-  border-radius: 5px;
-  background: DarkGreen;
-  font-size: 12px;
-  color: white;
+#init-navForward {
   margin-right: 15px;
-  padding: 0.5em;
-  cursor: pointer;
-  text-transform: uppercase;
+  padding: 5px 20px; 
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

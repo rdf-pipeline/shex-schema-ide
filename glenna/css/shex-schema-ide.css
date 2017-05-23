@@ -1,0 +1,332 @@
+
+h1 { 
+  margin: 0;
+}
+
+.info-label {
+  background: transparent;
+  color: slategray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 5px 0 5px;
+  text-transform: uppercase;
+}
+
+.top-label {
+  background: transparent;
+  color: DarkSlateGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 2px 5px 0 5px;
+  text-transform: uppercase;
+}
+
+.workbench-label {
+  background: transparent;
+  color: DarkSlateGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#main-ide-form {
+  border: none;
+  background: transparent;
+  padding: 20px;
+}
+
+.vertical-btn-group button {
+  background: SlateGray;
+  border: 1px solid #E4E4E4;
+  cursor: pointer;
+  color: white;
+  display: block; 
+  width: 10%; /* Set a width if needed */
+}
+
+.vertical-btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.vertical-btn-group button:hover {
+    background-color: silver;
+}
+
+.uber-label
+{
+  display: block;
+  padding: 20px 0 0;
+  vertical-align: top;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #939393;
+  cursor: pointer;
+}
+
+@media(min-width:800px){
+  form > div.col-1 { width: 90% }
+  form > div.col-2 { width: 45% }
+  form > div.col-3 { width: 33.3333333333% }
+  form > div.col-4 { width: 25% }
+}
+
+#jsonld-frame-div {
+  padding: 0 70px;
+}
+
+#jsonld-frame {
+  border: 1px solid silver;
+  border-radius: 3px;
+  background: transparent;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  color: gray;
+  display: inline-block;
+  height:70px;
+  line-height: 1.1em;
+  margin: 5px 2px;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 1;
+  overflow:scroll; 
+  position: relative;
+  transition: opacity .3s, box-shadow .3s;
+  width: 100%;
+}
+
+.arrow-right {
+  background: transparent;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid green;
+  height: 0; 
+  padding: 0;
+  vertical-align: top;
+  width: 0;
+}
+
+.command-box {
+  float:left;
+  margin: 15px 0 2px 15px;
+  height: 100px;
+  width: 20px;
+}
+
+#execute-console-label {
+  color: DarkSlateGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: 5px 0 0 15px;
+  text-align: bottom;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+#execute-console {
+  border: 1px solid silver;
+  border-radius: 3px;
+  background: transparent;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 200;
+  height:100px;
+  line-height: 1.1em;
+  margin: 5px 2px 0 15px;
+  position: relative;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y:scroll; 
+  transition: opacity .3s, box-shadow .3s;
+  width: 95%; 
+}
+
+#map-hub-search-btn {
+  float: left;
+  height: 25px;
+  padding: 0 2px 2px;
+  width: 25px;
+}
+
+#map-hub-search-img {
+  height: 20px;
+  width: 20px;
+}
+
+#map-hub-search-input {
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  justify-content: flex-end;
+  padding: 1px;
+  width: 90%;
+}
+
+#map-hub-results {
+  border: 1px solid silver;
+  border-radius: 3px;
+  background: transparent;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  line-height: 1.1em;
+  margin: 5px 2px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 1;
+  transition: opacity .3s, box-shadow .3s;
+  overflow:scroll; 
+  height:320px;
+}
+
+#sample-data {
+  border: 1px solid silver;
+  border-radius: 3px;
+  background: transparent;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  line-height: 1.1em;
+  margin: 5px 2px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 1;
+  transition: opacity .3s, box-shadow .3s;
+  overflow:scroll; 
+  height:320px;
+}
+
+#shex-schema {
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  line-height: 1.1em;
+  margin-bottom: 5px;
+  border-color: silver;
+  border-radius: 3px;
+  background: transparent;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 1;
+  transition: opacity .3s, box-shadow .3s;
+  overflow:scroll; 
+  height:290px;
+}
+
+#shex-schema-root-div {
+  display:table;
+  margin-top: 2px;
+  width:100%; 
+}
+
+#shex-root-label { 
+  color: DarkSlateGray;
+  display: table-cell;
+  padding: 5px;
+  width: 1px;
+}
+
+#shex-schema-root {
+  border: 1px solid DarkGray;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  display: table-cell; 
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  width: 100%
+}
+
+.editable-row {
+   padding: 0 3px;
+}
+
+form > div.col-submit {
+  text-align: center;
+  padding: 20px;
+  margin:0px auto;
+  width: 95%;
+}
+
+form > div.col-submit button {
+  border: 1px solid #E4E4E4;
+  background: silver;
+  font-size: 14px;
+  color: black;
+  margin-right: 10px;
+  padding: 0.5em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+
+.type-select
+{
+  background: transparent;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 1;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+}
+
+.schema-separation {
+   margin: 5px 5px;
+}
+
+.indent-2 {
+    padding-left: 2em;
+}
+
+.indent-4 {
+    padding-left: 4em;
+}
+
+.indent-6 {
+    padding-left: 6em;
+}
+
+.active-prop {
+    color: Green !important;
+    font-family: Source Sans Pro, Arial, sans-serif;
+    font-weight: 200;
+}
+
+.inactive-prop {
+    color: Gray !important;
+}
+
+.version {
+  line-height: 1;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+  margin-right: 0;
+}
+
+a:active, a:link, a:hover, a:visited {
+  text-decoration: none;
+}
+
+.circle {
+  border: 1px solid DarkGray;
+  border-radius: 50%;
+  padding: 3px 3px 3px 10px;
+  width: 30px;
+  height: 30px; 
+}
