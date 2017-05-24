@@ -5,13 +5,13 @@ h1 {
 
 .info-label {
   background: transparent;
-  color: slategray;
+  color: SlateGray;
   font-family: Source Sans Pro, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
-  margin: 10px 5px 0 5px;
   text-transform: uppercase;
 }
+
 
 .top-label {
   background: transparent;
@@ -29,7 +29,7 @@ h1 {
   font-family: Source Sans Pro, Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 5px;
   text-transform: uppercase;
   width: 100%;
 }
@@ -78,11 +78,11 @@ h1 {
   form > div.col-4 { width: 25% }
 }
 
-#jsonld-frame-div {
+#select-map-data-div {
   padding: 0 70px;
 }
 
-#jsonld-frame {
+#select-map-data {
   border: 1px solid silver;
   border-radius: 3px;
   background: transparent;
@@ -143,7 +143,7 @@ h1 {
   font-weight: 200;
   height:100px;
   line-height: 1.1em;
-  margin: 5px 2px 0 15px;
+  margin: 5px 0 0 15px;
   position: relative;
   opacity: 1;
   overflow-x: hidden;
@@ -152,24 +152,31 @@ h1 {
   width: 95%; 
 }
 
-#map-hub-search-btn {
-  float: left;
-  height: 25px;
-  padding: 0 2px 2px;
-  width: 25px;
+.search-btn {
+  border: 1px solid GrayCloud;
+  height: 27px;
+  padding: 2px;
+  margin-left: -27px;
+  vertical-align: top;
+  width: 27px;
 }
 
-#map-hub-search-img {
+.search-container {
+   width: 100%;
+}
+
+.search-img {
   height: 20px;
   width: 20px;
 }
 
-#map-hub-search-input {
+.search-input {
   font-family: Source Sans Pro, Arial, sans-serif;
   font-size: 12px;
-  justify-content: flex-end;
-  padding: 1px;
-  width: 90%;
+  line-height: 18px;
+  padding: 2px 30px 2px 2px; 
+  margin: 0;
+  width: 100%;
 }
 
 #map-hub-results {
@@ -178,17 +185,18 @@ h1 {
   background: transparent;
   box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
   display: inline-block;
-  position: relative;
-  width: 100%;
-  line-height: 1.1em;
-  margin: 5px 2px;
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   font-weight: 200;
+  height:340px;
+  position: relative;
+  line-height: 1.1em;
+  margin: 0;
   opacity: 1;
+  overflow: auto;
   transition: opacity .3s, box-shadow .3s;
-  overflow:scroll; 
-  height:320px;
+  white-space: nowrap;
+  width: 100%;
 }
 
 #sample-data {
@@ -197,36 +205,37 @@ h1 {
   background: transparent;
   box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
   display: inline-block;
-  position: relative;
-  width: 100%;
-  line-height: 1.1em;
-  margin: 5px 2px;
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   font-weight: 200;
-  opacity: 1;
-  transition: opacity .3s, box-shadow .3s;
-  overflow:scroll; 
   height:320px;
+  line-height: 1.1em;
+  margin: 0 2px 5px;
+  opacity: 1;
+  overflow: auto;
+  position: relative;
+  transition: opacity .3s, box-shadow .3s;
+  white-space: nowrap;
+  width: 100%;
 }
 
 #shex-schema {
-  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  line-height: 1.1em;
-  margin-bottom: 5px;
+  background: transparent;
   border-color: silver;
   border-radius: 3px;
-  background: transparent;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+  display: inline-block;
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   font-weight: 200;
+  height:310px;
+  line-height: 1.1em;
+  margin-bottom: 5px;
   opacity: 1;
-  transition: opacity .3s, box-shadow .3s;
   overflow:scroll; 
-  height:290px;
+  position: relative;
+  transition: opacity .3s, box-shadow .3s;
+  width: 100%;
 }
 
 #shex-schema-root-div {
@@ -239,6 +248,7 @@ h1 {
   color: DarkSlateGray;
   display: table-cell;
   padding: 5px;
+  margin: 10px 5px 0 5px;
   width: 1px;
 }
 
@@ -286,8 +296,8 @@ form > div.col-submit button {
   box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
 }
 
-.schema-separation {
-   margin: 5px 5px;
+.workblock-separation {
+  padding: 5px !important;
 }
 
 .indent-2 {
@@ -312,11 +322,22 @@ form > div.col-submit button {
     color: Gray !important;
 }
 
+#version-input {
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  padding: 2px 30px 2px 2px; 
+  margin: 0;
+}
+
 .version {
   line-height: 1;
   justify-content: flex-end;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
   margin-right: 0;
+}
+
+#version-label {
+  margin: 2px 5px 0 5px;
 }
 
 a:active, a:link, a:hover, a:visited {

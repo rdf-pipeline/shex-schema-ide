@@ -24,29 +24,20 @@
 
      <div class="row">
 
-        <div id="jsonld-frame-div" class="col-sm-12 text-left">
-           <label class="top-label text-right version"> JSON-LD Frame: </label>
-           <textarea id="jsonld-frame" tabindex="1">
-{
-  "@context": "https://raw.githubusercontent.com/rdf-pipeline/translators/master/data/fake_cmumps/patient-7/context.jsonld",
-  "@graph": [{"@type": "Patient-2"}]
-}
-           </textarea>
-        </div>
-
-
-     </div> <!-- row -->
-
-     <div class="row">
-
         <!-- SAMPLE DATA -->
-        <div class="col-sm-3">
+        <div class="workblock-separation col-sm-3">
            <label class="workbench-label text-left"> Sample Data </label>
            <ul class="nav nav-tabs">
               <li><a href="#">Raw</a></li>
               <li class="active"><a href="#">JSON</a></li>
               <li><a href="#">Context</a></li>
            </ul>
+
+           <div class="search-container" tabindex="5">
+             <input id="sample-data-search-input" class="search-input" placeholder="search regular expression" tabindex="2" />
+             <button id="sample-data-search-btn" type="button" class="search-btn btn"> <img class="search-img" src="images/search-icon.png" /></button>
+           </div>
+
            <div id="sample-data" tabindex="2">
              <div><a href="#" class="active-prop"> { </a></div>
              <div class="indent-2"><a href="#" class="active-prop"> "type": "cmumpss:Patient-2", </a></div>
@@ -90,7 +81,7 @@
             <div class="indent-2"><a href="#" class="inactive-prop"> "ezip-2" : "55555", </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop"> "fmp-2": { </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop"> "id": "8110-20", </a></div>
-                <div class="indent-4"><a href="#" class="inactive-prop">> "label": "20" </a></div>
+                <div class="indent-4"><a href="#" class="inactive-prop"> "label": "20" </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop"> } </a></div>
             <div><a href="#" class="active-prop"> } </a> </div>
            </div>
@@ -98,16 +89,16 @@
 
 
         <!-- SHEX SCHEMA  -->
-        <div class="col-sm-6">
+        <div class="workblock-separation col-sm-6">
            <label class="workbench-label text-center"> ShEx Schema Map </label>
-           <label class="top-label text-right version pull-right"> Version: 
-                <input placeholder="#.#.#" tabindex="2" />
+           <label class="info-label version-label text-right version pull-right"> Version: 
+             <input id="version-input" placeholder="#.#.#" tabindex="2" />
            </label>
            <ul class="nav nav-tabs">
               <li><a href="#">Prefixes</a></li>
               <li class="active"><a href="#">Mappings</a></li>
            </ul>
-           <textarea id="shex-schema" tabindex="3">
+           <textarea id="shex-schema" tabindex="3" wrap="off">
 <http://hokukahu.com/patient-1> {
    cmumpss:identifier        xsd:string    %Map:{ dem:id %};
    cmumpss:name-2            xsd:string    %Map:{
@@ -138,11 +129,11 @@
         </div> <!-- SHEX SCHEMA -->
 
         <!-- MAPPING HUB  -->
-        <div class="col-sm-3">
+        <div class="workblock-separation col-sm-3">
            <label class="workbench-label text-left"> Mapping Hub </label>
            <div class="search full-width" tabindex="5">
-             <button id="map-hub-search-btn" type="button" class="btn"> <img id="map-hub-search-img" src="images/search-icon.png" /></button>
-             <input id="map-hub-search-input" placeholder="search regular expression" tabindex="2" />
+             <input id="map-hub-search-input" class="search-input" placeholder="search regular expression" tabindex="2" />
+             <button id="map-hub-search-btn" type="button" class="search-btn btn"> <img id="map-hub-search-img" class="search-img" src="images/search-icon.png" /></button>
            </div>
            <div id="map-hub-results" tabindex="6">
            </div>
@@ -166,6 +157,7 @@
 
    </form>
 </div> <!-- container -->
+
 
 </body>
 </html>

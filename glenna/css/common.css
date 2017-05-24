@@ -1,5 +1,5 @@
 html body {
-   background-color: #F3F3F3; # pale gray
+   background-color: white;
    height: 100%;
    width: 100%;
 }
@@ -32,6 +32,11 @@ html body {
   font-size: 10px;
   line-height: 1;
   padding: 5px 15px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  vertical-align: bottom;
 }
 
 h1 {
