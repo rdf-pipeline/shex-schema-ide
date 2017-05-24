@@ -7,7 +7,7 @@ h1 {
   background: transparent;
   color: SlateGray;
   font-family: Source Sans Pro, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -245,7 +245,7 @@ h1 {
 }
 
 #shex-root-label { 
-  color: DarkSlateGray;
+  color: SlateGray;
   display: table-cell;
   padding: 5px;
   margin: 10px 5px 0 5px;
