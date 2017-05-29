@@ -3,15 +3,22 @@ h1 {
   margin: 0;
 }
 
+.ide-action-button {
+  background: DarkGray none repeat scroll 0 0;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
 .info-label {
   background: transparent;
   color: SlateGray;
   font-family: Source Sans Pro, Arial, sans-serif;
   font-size: 11px;
   font-weight: 400;
-  text-transform: uppercase;
 }
-
 
 .top-label {
   background: transparent;
@@ -21,6 +28,10 @@ h1 {
   font-weight: 400;
   margin: 2px 5px 0 5px;
   text-transform: uppercase;
+}
+
+.top-nav-form {
+   padding: 10px 0;
 }
 
 .workbench-label {
@@ -37,7 +48,7 @@ h1 {
 #main-ide-form {
   border: none;
   background: transparent;
-  padding: 20px;
+  padding: 40px 20px 20px;
 }
 
 .vertical-btn-group button {
@@ -120,16 +131,10 @@ h1 {
   width: 20px;
 }
 
-#execute-console-label {
-  color: DarkSlateGray;
-  font-family: Source Sans Pro, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-  padding: 5px 0 0 15px;
-  text-align: bottom;
-  text-transform: uppercase;
-  background: transparent;
+#execute-console-div {
+  margin: 0 5px;
+  padding: 0 10px 0 0;
+  padding: 0 10px 0 0;
 }
 
 #execute-console {
@@ -141,15 +146,14 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   font-weight: 200;
-  height:100px;
+  height:150px;
   line-height: 1.1em;
-  margin: 5px 0 0 15px;
   position: relative;
   opacity: 1;
   overflow-x: hidden;
   overflow-y:scroll; 
   transition: opacity .3s, box-shadow .3s;
-  width: 95%; 
+  width: 100%; 
 }
 
 .search-btn {
@@ -179,6 +183,18 @@ h1 {
   width: 100%;
 }
 
+.map-hub-type-label { 
+  color: SlateGray;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  padding-top: 0 !important;
+}
+
+.map-hub-types { 
+   margin-bottom: 5px;
+}
+
 #map-hub-results {
   border: 1px solid silver;
   border-radius: 3px;
@@ -188,7 +204,7 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   font-weight: 200;
-  height:340px;
+  height:315px;
   position: relative;
   line-height: 1.1em;
   margin: 0;
@@ -208,7 +224,7 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   font-weight: 200;
-  height:320px;
+  height:315px;
   line-height: 1.1em;
   margin: 0 2px 5px;
   opacity: 1;
@@ -351,3 +367,4 @@ a:active, a:link, a:hover, a:visited {
   width: 30px;
   height: 30px; 
 }
+

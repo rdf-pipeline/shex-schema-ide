@@ -12,18 +12,20 @@
 
 <body>
 
-  <form class="form-horizontal center" role="form">
-     <div class="navigation-buttons btn-group btn-group-sm">
-        <button id="navBack" class="navigation-button btn btn-primary" type="submit" formaction="./splash.html"> &lt; </button>
-        <button id="navForward" "type="button" class="navigation-button btn btn-primary"> &gt; </button>
-     </div>
-  </form>
-
-    <h1> ShEx Schema IDE </h1>
-
   <div class="container">
-    <form id="main-ide-form" class="form-horizontal center" role="form">
+     <form class="top-nav-form form-horizontal center" role="form">
+        <div class="row"> 
+           <div class="col-sm-3 col-centered"> 
+              <div class="navigation-buttons btn-group btn-group-sm">
+                 <button id="navBack" class="navigation-button btn btn-primary" type="submit" formaction="./splash.html"> &lt; </button>
+                 <button id="open" "type="button" class="ide-action-button btn btn-primary"> Test </button>
+                 <button id="navForward" "type="button" class="navigation-button btn btn-primary"> &gt; </button>
+              </div>
+           </div> <!-- col -->
+        </div> <!-- nav row -->
+     </form>
 
+    <form id="main-ide-form" class="form-horizontal center" role="form">
      <div class="row">
 
         <!-- SAMPLE DATA -->
@@ -35,12 +37,12 @@
               <li><a href="#">Context</a></li>
            </ul>
 
-           <div class="search-container" tabindex="5">
+           <div class="search-container" tabindex="1">
              <input id="sample-data-search-input" class="search-input" placeholder="search regular expression" tabindex="2" />
              <button id="sample-data-search-btn" type="button" class="search-btn btn"> <img class="search-img" src="images/search-icon.png" /></button>
            </div>
 
-           <div id="sample-data" tabindex="2">
+           <div id="sample-data" tabindex="3">
              <div><a href="#" class="active-prop"> { </a></div>
              <div class="indent-2"><a href="#" class="active-prop"> "type": "cmumpss:Patient-2", </a></div>
              <div class="indent-2"><a href="#" class="active-prop"> "_id": "2-000007", </a></div>
@@ -59,29 +61,29 @@
              <div class="indent-2"><a href="#" class="active-prop"> "email_address-2" : "bugs.bunny@looneytun.es", </a></div>
              <div class="indent-2"><a href="#" class="active-prop"> "ssn-2": "777777777", </a></div>
              <div class="indent-2"><a href="#" class="active-prop"> "dod_id_-2": "7777777770", </a></div>
-             <div class="indent-2"><a href="#" class="active-prop"> "sex-2": { </a></div>
+             <div class="indent-2"><a href="#" class="active-prop"> - "sex-2": { </a></div>
                 <div class="indent-4"><a href="#" class="active-prop"> "id": "cmumpss:2__02_E-MALE", </a></div>
                 <div class="indent-4"><a href="#" class="active-prop"> "label": "MALE" </a></div>
              <div class="indent-2"><a href="#" class="active-prop"> }, </a></div>
-             <div class="indent-2"><a href="#" class="inactive-prop"> "marital_status-2": { </a></div>
+             <div class="indent-2"><a href="#" class="inactive-prop"> - "marital_status-2": { </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop"> "id": "11-2", </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop"> "label": "DIVORCED" </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop"> }, </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop">"emergency_contact-2" : "RUNNAH, ROAD", </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop">"ephone-2" : "555 555 5558", </a></div>
-            <div class="indent-2"><a href="#" class="inactive-prop">"erelationship-2" : { </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> - "erelationship-2" : { </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop"> "id" : "8140-20", </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop">"label" : "OTHER RELATIONSHIP" </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop"> }, </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop">"estreet_address-1" : "c/o Mel Blanc", </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop">"estreet_address-2" : "7000 InternalTest Boulevard", </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop">"ecity-2" : "ALBUQUERQUE", </a></div>
-            <div class="indent-2"><a href="#" class="inactive-prop">"estate-2" : { </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> - "estate-2" : { </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop"> "id" : "5-17", </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop">"label" : "NEW MEXICO" </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop"> }, </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop"> "ezip-2" : "55555", </a></div>
-            <div class="indent-2"><a href="#" class="inactive-prop"> "fmp-2": { </a></div>
+            <div class="indent-2"><a href="#" class="inactive-prop"> - "fmp-2": { </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop"> "id": "8110-20", </a></div>
                 <div class="indent-4"><a href="#" class="inactive-prop"> "label": "20" </a></div>
             <div class="indent-2"><a href="#" class="inactive-prop"> } </a></div>
@@ -94,13 +96,13 @@
         <div class="workblock-separation col-sm-6">
            <label class="workbench-label text-center"> ShEx Schema Map </label>
            <label class="info-label version-label text-right version pull-right"> Version: 
-             <input id="version-input" placeholder="#.#.#" tabindex="2" />
+             <input id="version-input" placeholder="#.#.#" tabindex="4" />
            </label>
            <ul class="nav nav-tabs">
               <li><a href="#">Prefixes</a></li>
               <li class="active"><a href="#">Mappings</a></li>
            </ul>
-           <textarea id="shex-schema" tabindex="3" wrap="off">
+           <textarea id="shex-schema" tabindex="5" wrap="off">
 <http://hokukahu.com/patient-1> {
    cmumpss:identifier        xsd:string    %Map:{ dem:id %};
    cmumpss:name-2            xsd:string    %Map:{
@@ -126,35 +128,48 @@
            </textarea>
            <div id="shex-schema-root-div"> 
              <label id="shex-root-label" class="info-label"> Start:  </label>
-             <input id="shex-schema-root" placeholder="Root URI for building ShEx mappings" tabindex="4" />
+             <input id="shex-schema-root" placeholder="Root URI for building ShEx mappings" tabindex="6" />
            </div>
         </div> <!-- SHEX SCHEMA -->
 
         <!-- MAPPING HUB  -->
         <div class="workblock-separation col-sm-3">
-           <label class="workbench-label text-left"> Mapping Hub </label>
-           <div class="search full-width" tabindex="5">
-             <input id="map-hub-search-input" class="search-input" placeholder="search regular expression" tabindex="2" />
+           <label class="workbench-label text-center"> Mapping Hub </label>
+           <div class="map-hub-types" full-width" tabindex="7"> 
+              <label class="map-hub-type-label checkbox-inline"> <input type="checkbox" name="map-hub-type" value="MDMI">MDMI </label>
+              <label class="map-hub-type-label checkbox-inline"> <input type="checkbox" name="map-hub-type" value="ShEx">ShEx </label>
+           </div>
+           <div class="search full-width" tabindex="8">
+             <input id="map-hub-search-input" class="search-input" placeholder="search regular expression" tabindex="9" value="patient"/>
              <button id="map-hub-search-btn" type="button" class="search-btn btn"> <img id="map-hub-search-img" class="search-img" src="images/search-icon.png" /></button>
            </div>
-           <div id="map-hub-results" tabindex="6">
+           <div id="map-hub-results" tabindex="10">
+               <div class="indent-2"> + familyName</div>
+               <div class="indent-2"> - fullName</div>
+                   <div class="indent-4"> { </div>
+                      <div class="indent-6"> "@context": "https://raw.githubusercontent.com/mappinghub/elements/master/ont/context.jsonld", </div>
+                      <div class="indent-6"> "name": "fullName", </div>
+                      <div class="indent-6"> "description": "Full name of a person, in the form 'FamilyName,GivenName'.", </div>
+                      <div class="indent-6"> "type": "xsd:string", </div>
+                      <div class="indent-6">  "skos:related": [ "shex:familyName", "shex:givenName" ] </div>
+                   <div class="indent-4"> } </div>
+               <div class="indent-2"> + givenName</div>
            </div>
         </div> <!-- SOURCE SCHEMA -->
 
      </div> <!-- row -->
 
      <!-- Execution & Console --> 
-     <div class="row full-width">
-          <div class="command-box"> 
-             <div class="circle"> 
-                <button id="test-schema" type="button" class="arrow-right btn"> </button>
-             </div>
-          </div>
-          <div> 
-             <label id="execute-console-label" for="execute-console" class="text-left"> Test Console </label>
+     <div class="row">
+         <div id="execute-console-div" class="col-sm-12"> 
+            <ul class="nav nav-tabs">
+               <li class="active"><a href="#">Console</a></li>
+               <li><a href="#">Bindings</a></li>
+               <li><a href="#">Roundtrip Results</a></li>
+             </ul>
              <div id="execute-console">  
              </div>
-          </div>
+         </div>  <!-- console/results tabs and box -->
      </div> <!-- row -->
 
    </form>
