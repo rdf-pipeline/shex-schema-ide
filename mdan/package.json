@@ -4,6 +4,7 @@
   "description": "Shex editor in es6/7, webpack2, sass and postcss",
   "scripts": {
     "postinstall": "cp env.example.js env.js",
+    "shextest": "./node_modules/shex/bin/validate -x http://shex.io/examples/Issue.shex -d http://shex.io/examples/Issue1.ttl -s http://shex.io/examples/IssueShape -n http://shex.io/examples/Issue1",
     "start": "webpack-dev-server --config webpack/dev.config.js --watch",
     "build": "NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --color",
     "precommit": "eslint src"
@@ -25,7 +26,8 @@
   "author": "mDan",
   "license": "Apache-2.0",
   "dependencies": {
-    "babel-polyfill": "^6.23.0"
+    "babel-polyfill": "^6.23.0",
+    "shex": "^0.9.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.6",
